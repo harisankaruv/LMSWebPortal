@@ -13,6 +13,9 @@
 </head>
 
 <body>
+    <?php
+        mysqli_connect("localhost", "root", "", "library");
+    ?>
   <div class="form">
       
       <ul class="tab-group">
