@@ -19,8 +19,9 @@
         </section>
         <section class="w3-card">
             <form method="post">
-                <div class="w3-bar">
-                    <input type="button" value="Reserve Book" class="w3-bar-item w3-teal" style="width: 100px"/>
+                <div class="w3-bar w3-padding-24 w3-margin">
+                    <input type="button" value="Reserve Book" class="w3-button w3-bar-item w3-teal" style="width: 150px"/>
+                    <input type="button" value="Issue Book" class="w3-button w3-bar-item w3-pink" style="width: 150px"/>
                 </div>
             </form>
         </section>
