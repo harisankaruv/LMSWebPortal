@@ -19,10 +19,15 @@
         </section>
         <section class="w3-card">
             <form method="post">
-                <div class="w3-bar w3-padding-24 w3-margin">
+                <div class="w3-bar w3-padding-24 " >
                     <input type="button" value="Reserve Book" class="w3-button w3-bar-item w3-teal" style="width: 150px"/>
                     <input type="button" value="Issue Book" class="w3-button w3-bar-item w3-pink" style="width: 150px"/>
+                    <input type="button" value="Search Book" class="w3-button w3-bar-item w3-khaki" style="width: 150px"/>
+                    <input type="button" value="Cancel Reserve" class="w3-button w3-bar-item w3-orange" style="width: 150px"/>
+                   <input type="button" value="Logout" class="w3-button w3-bar-item w3-blue-gray w3-right" style="width: 150px"/>
+                    <input type="button" value="Update Account" class="w3-button w3-bar-item w3-black w3-right" style="width: 150px"/>
                 </div>
+                
             </form>
         </section>
         <footer class="w3-container w3-purple w3-center w3-bottom">
