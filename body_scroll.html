@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/favicon.ico"/>
+        <link rel="stylesheet" href="css/w3.css" type="text/css"/>
+    </head>
+    <body>
+        <div>
+        <section class="w3-card">
+            <div class="w3-card w3-display-container">
+                <img class="mySlides w3-animate-fading" src="images/slideshow_main/slide_show_1.jpg" style="width:100%; height: 100%">
+                <div class="w3-display-middle w3-xxlarge w3-container w3-padding-16 w3-black">
+                    Welcome to ALMS
+                </div>
+                <img class="mySlides w3-animate-fading" src="images/slideshow_main/slide_show_2.jpg" style="width:100%; height: 100%">
+                <div class="w3-display-middle w3-xxlarge w3-container w3-padding-16 w3-black">
+                    Welcome to ALMS
+                </div>
+                <img class="mySlides w3-animate-fading" src="images/slideshow_main/slide_show_3.jpg" style="width:100%; height: 100%">
+                <div class="w3-display-middle w3-xxlarge w3-container w3-padding-16 w3-black">
+                    Welcome to ALMS
+                </div>
+                <img class="mySlides w3-animate-fading" src="images/slideshow_main/slide_show_4.jpeg" style="width:100%; height: 100%">
+                <div class="w3-display-middle w3-xxlarge w3-container w3-padding-16 w3-black">
+                    Welcome to ALMS
+                </div>
+            </div>
+            <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {myIndex = 1}    
+                    x[myIndex-1].style.display = "block";  
+                    setTimeout(carousel, 9000);    
+                }
+            </script>
+        </section>
+        </div>
+    </body>
+</html>
