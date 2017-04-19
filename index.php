@@ -12,14 +12,25 @@
 
 <body>
     <?php
+        $link=mysqli_connect("localhost", "root", "", "library");
         function register(){
-            $link=mysqli_connect("localhost", "root", "", "library");
             $mid=(int)($_POST['memid']);
             $mname=$_POST['memname'];
             $mtype=$_POST['memtype'];
             $mpass=$_POST['mempass'];
             $query="insert into membership values("+$mid+",'"+$mname+"','"+$mtype+"','"+$mpass+");";
-            $s= mysqli_query($link, $query);
+            $s= mysqli_query($GLOBALS[$link], $query);
+        }
+        function checkUser(){
+            $mid=(int) $_POST['logid'];
+            $mps=$_POST['logpass'];
+            $query="select * from membership where memid="+$mid+"and password='"+$mps+"'";
+            if($query==NULL){
+                window.alert("User does not exist or Invalid Login!");
+            }
+            else{
+                
+            }
         }
     ?>
   <div class="form">
@@ -85,14 +96,14 @@
             <label>
               Member ID<span class="req">*</span>
             </label>
-            <input type="text"required autocomplete="off"/>
+                <input type="text" name="logid" required autocomplete="off"/>
           </div>
           
           <div class="field-wrap">
             <label>
               Password<span class="req">*</span>
             </label>
-            <input type="password"required autocomplete="off"/>
+              <input type="password" name="logpass" required autocomplete="off"/>
           </div>
           
           <p class="forgot"><a href="#">Forgot Password?</a></p>
