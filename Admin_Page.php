@@ -1,4 +1,5 @@
 <?php
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -16,12 +17,12 @@
         <section class="w3-card">
             <form method="post">
                 <div class="w3-bar w3-padding-16 w3-purple" >
-                    <a href="ReserveBook.php" target="content_display"><input type="button" value="Reserve Book" class="w3-hover-purple w3-ripple w3-button w3-bar-item w3-teal" style="width: 150px" onclick=""/></a>
-                    <input type="button" value="Issue Book" class="w3-hover-purple w3-ripple w3-button w3-bar-item w3-pink" style="width: 150px"/>
-                    <input type="button" value="Search Book" class="w3-hover-purple w3-ripple w3-button w3-bar-item w3-khaki" style="width: 150px"/>
-                    <input type="button" value="Cancel Reserve" class="w3-hover-purple w3-ripple w3-button w3-bar-item w3-orange" style="width: 150px"/>
+                    <a href="AddNewBook.php" target="content_display"><input type="button" value="Add Book" class="w3-hover-purple w3-ripple w3-button w3-bar-item w3-teal" style="width: 150px"/></a>
+                    <a href="UpdateBook.php" target="content_display"><input type="button" value="Update Book" class="w3-hover-purple w3-ripple w3-button w3-bar-item w3-pink" style="width: 150px"/></a>
+                    <input type="button" value="Delete Book" class="w3-hover-purple w3-ripple w3-button w3-bar-item w3-khaki" style="width: 150px"/>
+                    <input type="button" value="Fine Details" class="w3-hover-purple w3-ripple w3-button w3-bar-item w3-orange" style="width: 150px"/>
+                    <input type="button" value="Fine Update" class="w3-hover-purple w3-ripple w3-button w3-bar-item w3-orange" style="width: 150px"/>
                     <input type="button" value="Logout" class="w3-hover-purple w3-ripple w3-button w3-bar-item w3-blue-gray w3-right" style="width: 150px"/>
-                    <input type="button" value="About" class="w3-hover-purple w3-ripple w3-button w3-bar-item w3-sand w3-right" style="width: 150px"/>
                     <input type="button" value="Update Account" class="w3-hover-purple w3-ripple w3-button w3-bar-item w3-black w3-right" style="width: 150px"/>
                     <a href="body_scroll.html" target="content_display"><input type="button" value="Home" class="w3-hover-purple w3-ripple w3-button w3-bar-item w3-teal w3-right" style="width: 150px"/></a>
                 </div>

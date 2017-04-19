@@ -21,7 +21,7 @@
                         <label class="w3-text-brown">Book Name</label><br><br>
                         <input type="text" name="authName" class="w3-input w3-animate-input w3-hover-brown w3-center" style="width: 75%"/>
                         <label class="w3-text-brown">Author</label><br><br>
-                        <input type="text" name="bookName" class="w3-input w3-animate-input w3-hover-brown w3-center" style="width: 20%"/>
+                        <input type="text" name="bookNum" class="w3-input w3-animate-input w3-hover-brown w3-center" style="width: 20%"/>
                         <label class="w3-text-brown">Total Books</label>
                         <br><br>
                         <div class="w3-bar">

@@ -12,7 +12,15 @@
 
 <body>
     <?php
-        mysqli_connect("localhost", "root", "", "library");
+        function register(){
+            $link=mysqli_connect("localhost", "root", "", "library");
+            $mid=(int)($_POST['memid']);
+            $mname=$_POST['memname'];
+            $mtype=$_POST['memtype'];
+            $mpass=$_POST['mempass'];
+            $query="insert into membership values("+$mid+",'"+$mname+"','"+$mtype+"','"+$mpass+");";
+            $s= mysqli_query($link, $query);
+        }
     ?>
   <div class="form">
       
@@ -32,14 +40,14 @@
               <label>
                 Member ID<span class="req">*</span>
               </label>
-              <input type="text" required autocomplete="off" />
+              <input type="text" name="memid" required autocomplete="off" />
             </div>
         
             <div class="field-wrap">
               <label>
                 Member Name<span class="req">*</span>
               </label>
-              <input type="text"required autocomplete="off"/>
+                <input type="text" name="memname" required autocomplete="off"/>
             </div>
           </div>
           
@@ -47,7 +55,7 @@
             <label>
               Member Type<span class="req">*</span>
             </label>
-              <input list="mtype"required autocomplete="off"/>
+              <input list="mtype" name="memtype" required autocomplete="off"/>
               <datalist id="mtype">
                   <option value="Student"></option>
                   <option value="Staff"></option>
@@ -59,10 +67,10 @@
             <label>
               Set A Password<span class="req">*</span>
             </label>
-            <input type="password"required autocomplete="off"/>
+              <input type="password" name="mempass" required autocomplete="off"/>
           </div>
           
-          <button type="submit" class="button button-block"/>Register</button>
+              <button type="submit" class="button button-block" onclick="register()"/>Register</button>
           
           </form>
 
